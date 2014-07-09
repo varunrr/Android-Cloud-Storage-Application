@@ -1,0 +1,73 @@
+package com.example.cloudaltas;
+
+import com.example.cloudaltas.util.SystemUiHider;
+
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+
+public class FullscreenActivity extends Activity {
+	
+	
+	Button b1;
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_fullscreen);
+        
+       // Button btn1 = (Button)this.findViewById( R.id.btnLogin );
+        
+        
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+          @Override
+          public void run() {
+            //Do something after 100ms
+        	  
+        	  setContentView(R.layout.chumma);
+          }
+        }, 10000);
+        
+        b1 = (Button) findViewById(R.id.button1);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      /*  b1.setOnClickListener(new OnClickListener()
+        {
+        public void onClick(View v)
+        {
+        Toast msg = Toast.makeText(getBaseContext(),
+             "You have clicked Button 1", Toast.LENGTH_LONG);
+                 msg.show();
+        }
+              });    */
+       
+                                       
+        
+        
+        
+        
+        
+        
+        
+        
+}
+}
+	
